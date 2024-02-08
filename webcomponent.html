@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flag Emoji</title>
+
+  <style type="text/css">
+    body {
+      margin: 1em auto;
+      max-width: 30em;
+      width: 88%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>URL based Heading</h1>
+
+  <url-based-heading></url-based-heading>
+
+
+  <script>
+    customElements.define('url-based-heading', class extends HTMLElement {
+
+      connectedCallback() {
+        const url = window.location.href;
+        const domainName = new URL(url).hostname;
+        let headingText;
+
+        switch (domainName) {
+          case 'www.example1.com':
+            headingText = 'Welcome to Example 1!';
+            break;
+          case 'www.example2.com':
+            headingText = 'Welcome to Example 2!';
+            break;
+          default:
+            headingText = 'Welcome!';
+        }
+
+        this.innerHTML = `<h1>${headingText}</h1>`;
+      }
+
+    });
+  </script>
+</body>
+
+</html>
