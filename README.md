@@ -28,7 +28,7 @@ I have four domain names—my real name, a short version, and two longer variati
 
 **The main features here are:**
 
-1. The HTML and logic are encapsulated in the web component, so you can nest the component inside an <h1> or <p> or whatever you want.
+1. The HTML and logic are encapsulated in the web component, so you can nest the component inside an `<h1>` or `<p>` or whatever you want.
 
 2. Uses the site's global CSS. The parent element styles take care of the look and feel of the component. For example, I use this component in the main heading and the copyright text in the footer of my site.
 
