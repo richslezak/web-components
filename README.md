@@ -12,6 +12,8 @@ This version of the navbar web component uses external javascript file the logic
 2. Global style for navbar uses name spacing.
 3. Navbar uses url and slug to add active class to nav item that matches the slug name.
 
+See Codepen [here](https://codepen.io/richslezak/pen/VwREYZZ)
+
 ### Navbar V2
 
 This version of the navbar web component encapsulates the logic and styles for highlighting the active page. The drawback I see here is that you still need to copy and paste the component into each page and if you have to add more items you need to do this multiple times. One option is to use an import statement to include the component in each page; however, not all browsers support this feature yet. Of course, you can use something like Astro.js, but that's beyond the scope of this project.
@@ -21,6 +23,8 @@ This version of the navbar web component encapsulates the logic and styles for h
 1. Logic is encapsulated in the web component.
 2. Styles are encapsulated with proper namespacing to avoid leaking into the main CSS.
 3. Navbar uses page-name attribute for the logic to add an active class to the nav item that matches the page-name attribute.
+
+See Codepen [here](https://codepen.io/richslezak/pen/NWJOPWj)
 
 ### Url Based Site Name
 
@@ -34,4 +38,4 @@ I have four domain names—my real name, a short version, and two longer variati
 
 3. Uses a switch statement to update the output text.
 
-See it in action [richslezak.com](https://richslezak.com/), [richardslezak.com](https://richardslezak.com/), [richardjslezak.com](https://richardjslezak.com/), [rjslezak.com](https://rjslezak.com/)
+See it in action: [richslezak.com](https://richslezak.com/), [richardslezak.com](https://richardslezak.com/), [richardjslezak.com](https://richardjslezak.com/), [rjslezak.com](https://rjslezak.com/)
