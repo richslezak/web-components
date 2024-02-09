@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/navbar.css">
+</head>
+
+<body>
+  <custom-navbar page-name="contact">
+    <nav>
+      <a data-page="home" href="/">Home</a>
+      <a data-page="about" href="/about.html">About</a>
+      <a data-page="contact" href="/contact.html">Contact</a>
+    </nav>
+    <script>
+      customElements.define(
+        'custom-navbar',
+        class extends HTMLElement {
+          connectedCallback() {
+            let pageName = this.getAttribute('page-name');
+            let navItems = document.querySelectorAll('nav a');
+
+            navItems.forEach((item) => {
+              if (item.getAttribute('data-page') === pageName) {
+                item.classList.add('active');
+              }
+            });
+          }
+        }
+      );
+    </script>
+    <style>
+      custom-navbar nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+      }
+
+      custom-navbar nav a {
+        padding: 0.25rem 0.5rem;
+        text-decoration: none;
+        color: black;
+      }
+
+      custom-navbar nav a.active {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </custom-navbar>
+  <h1>Contact Page</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</body>
+
+</html>
