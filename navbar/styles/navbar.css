@@ -2,7 +2,12 @@
 nav a {
   padding: 0.05rem;
   text-decoration: underline;
-  color: #333;
+  color: blue;
+}
+
+section {
+  max-width: 700px;
+  font-size: 1.2rem;
 }
 
 /* styles for custom-navbar web component */
