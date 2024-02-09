@@ -1,0 +1,34 @@
+<url-based-site-name>
+  <span>Rich Slezak</span>
+  <script>
+    customElements.define(
+      'url-based-site-name',
+      class extends HTMLElement {
+        connectedCallback() {
+          const url = window.location.href;
+          const domainName = new URL(url).hostname;
+          const siteName = this.querySelector('span');
+          let siteNameText;
+
+          switch (domainName) {
+            case 'richardslezak.com':
+              siteNameText = 'Richard Slezak';
+              break;
+            case 'richardjslezak.com':
+              siteNameText = 'Richard J Slezak';
+              break;
+            case 'rjslezak.com':
+              siteNameText = 'R J Slezak';
+              break;
+            default:
+              siteNameText = 'Rich Slezak';
+          }
+
+          if (siteName) {
+            siteName.innerText = siteNameText;
+          }
+        }
+      }
+    );
+  </script>
+</url-based-site-name>

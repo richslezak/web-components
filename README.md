@@ -21,3 +21,17 @@ This version of the navbar web component encapsulates the logic and styles for h
 1. Logic is encapsulated in the web component.
 2. Styles are encapsulated with proper namespacing to avoid leaking into the main CSS.
 3. Navbar uses page-name attribute for the logic to add an active class to the nav item that matches the page-name attribute.
+
+### Url Based Site Name
+
+I have four domain names—my real name, a short version, and two longer variations—that link to my personal website. I want the heading to match the URL of the webpage it's served from. The web component uses a span with 'Rich Slezak' as the default text, which changes based on the URL: richslezak.com, richardslezak.com, richardjslezak.com, and rjslezak.com.
+
+**The main features here are:**
+
+1. The HTML and logic are encapsulated in the web component, so you can nest the component inside an <h1> or <p> or whatever you want.
+
+2. Uses the site's global CSS. The parent element styles take care of the look and feel of the component. For example, I use this component in the main heading and the copyright text in the footer of my site.
+
+3. Uses a switch statement to update the output text.
+
+See it in action [richslezak.com](https://richslezak.com/), [richardslezak.com](https://richardslezak.com/), [richardjslezak.com](https://richardjslezak.com/), [rjslezak.com](https://rjslezak.com/)
