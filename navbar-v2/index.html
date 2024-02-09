@@ -64,13 +64,15 @@
       This version of the navbar web component encapsulates the logic and styles for highlighting the active
       page. The drawback I see here is that you still need to copy and paste the component into each page and if you
       have to add more items you need to do this multiple times. One option is to use an import statement to include the
-      component in each page however not all browsers support this feature yet. Of course you can use something like
-      Astro.js but thats beyond the scope of this project.
+      component in each page; however, not all browsers support this feature yet. Of course, you can use something like
+      Astro.js, but that's beyond the scope of this project.
     </p>
-    <p>The main feartures here are:</p>
+    <p>The main features here are:</p>
     <ul>
-      <li>Logic is encapsulated in the web component</li>
-      <li>Styles are encapsulated with proper name spacing to avoid leaking into main css</li>
+      <li>Logic is encapsulated in the web component.</li>
+      <li>Styles are encapsulated with proper namespacing to avoid leaking into the main CSS.</li>
+      <li>Navbar uses page-name attribute for the logic to add an active class to the nav item that matches the
+        page-name attribute.</li>
     </ul>
 
   </section>
