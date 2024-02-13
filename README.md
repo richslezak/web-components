@@ -12,7 +12,7 @@ This version of the navbar web component uses external javascript file the logic
 2. Global style for navbar uses name spacing.
 3. Navbar uses url and slug to add active class to nav item that matches the slug name.
 
-See Codepen [here](https://codepen.io/richslezak/pen/VwREYZZ)
+See Codepen [here](https://web-components-navbar.netlify.app/)
 
 ### Navbar V2
 
@@ -24,7 +24,7 @@ This version of the navbar web component encapsulates the logic and styles for h
 2. Styles are encapsulated with proper namespacing to avoid leaking into the main CSS.
 3. Navbar uses page-name attribute for the logic to add an active class to the nav item that matches the page-name attribute.
 
-See Codepen [here](https://codepen.io/richslezak/pen/NWJOPWj)
+See Codepen [here](https://web-components-navbar-v2.netlify.app/)
 
 ### Url Based Site Name
 
